@@ -20,6 +20,7 @@
 		809CFB452A339D6C00D348BE /* LetterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809CFB442A339D6C00D348BE /* LetterButtonView.swift */; };
 		809CFB472A339E7900D348BE /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809CFB462A339E7900D348BE /* Keyboard.swift */; };
 		809CFB4A2A33AFB900D348BE /* Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809CFB492A33AFB900D348BE /* Shake.swift */; };
+		809CFB4C2A3A0E3C00D348BE /* FlipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809CFB4B2A3A0E3C00D348BE /* FlipView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		809CFB442A339D6C00D348BE /* LetterButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterButtonView.swift; sourceTree = "<group>"; };
 		809CFB462A339E7900D348BE /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 		809CFB492A33AFB900D348BE /* Shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shake.swift; sourceTree = "<group>"; };
+		809CFB4B2A3A0E3C00D348BE /* FlipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				809CFB492A33AFB900D348BE /* Shake.swift */,
+				809CFB4B2A3A0E3C00D348BE /* FlipView.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				809CFB452A339D6C00D348BE /* LetterButtonView.swift in Sources */,
+				809CFB4C2A3A0E3C00D348BE /* FlipView.swift in Sources */,
 				809CFB292A335F3800D348BE /* GameView.swift in Sources */,
 				809CFB3E2A3388A100D348BE /* GuessView.swift in Sources */,
 				809CFB472A339E7900D348BE /* Keyboard.swift in Sources */,
