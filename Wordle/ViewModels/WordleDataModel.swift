@@ -12,6 +12,7 @@ class WordleDataModel: ObservableObject {
     @Published var guesses: [Guess] = []
     @Published var incorrectAttempts = [Int](repeating: 0, count: 6)
     @Published var toastText: String?
+    @Published var showStats = false
     
     var keyColors = [String: Color]()
     var matchedLetters = [String]()
@@ -22,6 +23,7 @@ class WordleDataModel: ObservableObject {
     var inPlay = false
     var gameOver = false
     var toastWords = ["Genius", "Magnificent", "Impressive", "Splendid", "Great", "Phew"]
+    var currentStat: Statistic
     
     var gameStarted: Bool {
         !currentWord.isEmpty || tryIndex > 0
@@ -32,6 +34,7 @@ class WordleDataModel: ObservableObject {
     }
     
     init() {
+        currentStat = Statistic.loadStat()
         newGame()
     }
     // MARK: - Setup
@@ -71,6 +74,7 @@ class WordleDataModel: ObservableObject {
             gameOver = true
             print("You win")
             setCurrentGuessColors()
+            currentStat.update(win: true, index: tryIndex)
             showToast(with: toastWords[tryIndex])
             inPlay = false
         } else {
@@ -80,9 +84,10 @@ class WordleDataModel: ObservableObject {
                 tryIndex += 1
                 currentWord = ""
                 if tryIndex == 6 {
+                    currentStat.update(win: false)
                     gameOver = true
                     inPlay = false
-                    print("You lose")
+                    showToast(with: selectedWord)
                 }
             } else {
                 withAnimation {
@@ -140,7 +145,7 @@ class WordleDataModel: ObservableObject {
             let guessLetter = guesses[tryIndex].guessLetters[index]
             if correctLetters.contains(guessLetter) && guesses[tryIndex].bgColors[index] != .correct && frequency[guessLetter]! > 0 {
                 guesses[tryIndex].bgColors[index] = .misplaced
-                if !misplacedLetters.contains(guessLetter) && matchedLetters.contains(guessLetter){
+                if !misplacedLetters.contains(guessLetter) && !matchedLetters.contains(guessLetter) {
                     misplacedLetters.append(guessLetter)
                     keyColors[guessLetter] = .misplaced
                 }
@@ -148,6 +153,7 @@ class WordleDataModel: ObservableObject {
                 frequency[guessLetter]! -= 1
             }
         }
+        
         for index in 0...4 {
             let guessLetter = guesses[tryIndex].guessLetters[index]
             if keyColors[guessLetter] != .correct && keyColors[guessLetter] != .misplaced {
@@ -171,6 +177,11 @@ class WordleDataModel: ObservableObject {
         }
         withAnimation(Animation.linear(duration: 0.2).delay(3)) {
             toastText = nil
+            if gameOver {
+                withAnimation(Animation.linear(duration: 0.2).delay(3)) {
+                    showStats.toggle()
+                }
+            }
         }
     }
 }
