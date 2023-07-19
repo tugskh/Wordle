@@ -31,7 +31,9 @@ struct GameView: View {
                     
                     Spacer()
                 }
+                .navigationViewStyle(.stack)
                 .navigationBarTitleDisplayMode(.inline)
+                .disabled(dm.showStats)
                 .overlay(alignment: .top) {
                     if let toastText = dm.toastText {
                         ToastView(toastText: toastText)
