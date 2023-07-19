@@ -26,6 +26,7 @@
 		809CFB522A683BA400D348BE /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809CFB512A683BA400D348BE /* StatsView.swift */; };
 		809CFB542A685EA900D348BE /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809CFB532A685EA900D348BE /* UIWindow+Extension.swift */; };
 		809CFB562A6862E300D348BE /* ColorSchemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809CFB552A6862E300D348BE /* ColorSchemeManager.swift */; };
+		809CFB582A68653100D348BE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809CFB572A68653100D348BE /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		809CFB512A683BA400D348BE /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		809CFB532A685EA900D348BE /* UIWindow+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
 		809CFB552A6862E300D348BE /* ColorSchemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSchemeManager.swift; sourceTree = "<group>"; };
+		809CFB572A68653100D348BE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				809CFB462A339E7900D348BE /* Keyboard.swift */,
 				809CFB4D2A68322600D348BE /* ToastView.swift */,
 				809CFB512A683BA400D348BE /* StatsView.swift */,
+				809CFB572A68653100D348BE /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				809CFB562A6862E300D348BE /* ColorSchemeManager.swift in Sources */,
 				809CFB292A335F3800D348BE /* GameView.swift in Sources */,
 				809CFB3E2A3388A100D348BE /* GuessView.swift in Sources */,
+				809CFB582A68653100D348BE /* SettingsView.swift in Sources */,
 				809CFB4E2A68322600D348BE /* ToastView.swift in Sources */,
 				809CFB472A339E7900D348BE /* Keyboard.swift in Sources */,
 				809CFB3B2A3387F200D348BE /* Guess.swift in Sources */,
