@@ -21,6 +21,7 @@
 		809CFB472A339E7900D348BE /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809CFB462A339E7900D348BE /* Keyboard.swift */; };
 		809CFB4A2A33AFB900D348BE /* Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809CFB492A33AFB900D348BE /* Shake.swift */; };
 		809CFB4C2A3A0E3C00D348BE /* FlipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809CFB4B2A3A0E3C00D348BE /* FlipView.swift */; };
+		809CFB4E2A68322600D348BE /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809CFB4D2A68322600D348BE /* ToastView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		809CFB462A339E7900D348BE /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 		809CFB492A33AFB900D348BE /* Shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shake.swift; sourceTree = "<group>"; };
 		809CFB4B2A3A0E3C00D348BE /* FlipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipView.swift; sourceTree = "<group>"; };
+		809CFB4D2A68322600D348BE /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				809CFB3D2A3388A100D348BE /* GuessView.swift */,
 				809CFB442A339D6C00D348BE /* LetterButtonView.swift */,
 				809CFB462A339E7900D348BE /* Keyboard.swift */,
+				809CFB4D2A68322600D348BE /* ToastView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				809CFB4C2A3A0E3C00D348BE /* FlipView.swift in Sources */,
 				809CFB292A335F3800D348BE /* GameView.swift in Sources */,
 				809CFB3E2A3388A100D348BE /* GuessView.swift in Sources */,
+				809CFB4E2A68322600D348BE /* ToastView.swift in Sources */,
 				809CFB472A339E7900D348BE /* Keyboard.swift in Sources */,
 				809CFB3B2A3387F200D348BE /* Guess.swift in Sources */,
 				809CFB382A33873500D348BE /* Color+Extension.swift in Sources */,
