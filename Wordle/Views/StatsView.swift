@@ -65,8 +65,8 @@ struct StatsView: View {
                     }
                 }
                 if dm.gameOver {
-                    HStack {
-                        Spacer()
+                    HStack() {
+//                        Spacer()
                         Button {
                             dm.shareResult()
                         } label: {
@@ -76,7 +76,8 @@ struct StatsView: View {
                             }
                             .foregroundColor(.white)
                             .padding(8)
-                            .background(Color.correct)
+                            .background(RoundedRectangle(cornerRadius: 15)
+                                .fill(Color.correct))
                         }
                     }
                 }

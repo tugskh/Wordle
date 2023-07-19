@@ -13,12 +13,12 @@ enum Global {
         UIScreen.main.bounds.size.width
     }
     
-    static var scrrenHeight :CGFloat {
+    static var screenHeight :CGFloat {
         UIScreen.main.bounds.size.height
     }
     
     static var minDimensions: CGFloat {
-        min(screenWidth,scrrenHeight)
+        min(screenWidth,screenHeight)
     }
     
     static var boardWidth: CGFloat {

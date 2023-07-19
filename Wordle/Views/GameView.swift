@@ -14,7 +14,9 @@ struct GameView: View {
         ZStack {
             NavigationView() {
                 VStack {
-                    
+                    if Global.screenHeight < 600 {
+                        Text("")
+                    }
                     Spacer()
                     
                     VStack(spacing: 3) {
@@ -60,12 +62,15 @@ struct GameView: View {
                                 }
                             }
                         }
+                        
                         ToolbarItem(placement: .principal) {
                             Text("WORDLE")
                                 .font(.largeTitle)
                                 .fontWeight(.heavy)
-                                .foregroundColor(.primary)
+                                .foregroundColor(dm.hardMode ? Color(.systemRed) : .primary)
+                                .minimumScaleFactor(0.5)
                         }
+                        
                         ToolbarItem(placement: .navigationBarTrailing) {
                             HStack {
                                 Button {
